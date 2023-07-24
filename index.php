@@ -1,5 +1,5 @@
 <?php
-include 'db.php';
+include 'app/config/db.php';
 
 // Ambil data barang dari database
 $sql = "SELECT * FROM barang";
@@ -11,12 +11,12 @@ $result = mysqli_query($conn, $sql);
 
 <head>
     <title>Proyek Penjualan Barang</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./public/css/style.css">
 </head>
 
 <body>
     <h1>Daftar Barang</h1>
-    <a href="tambah.php">Tambah Barang</a>
+    <a href="./app/views/tambah.php">Tambah Barang</a>
     <table>
         <tr>
             <th>Nama Barang</th>
@@ -30,8 +30,8 @@ $result = mysqli_query($conn, $sql);
             <td><?= $row['harga']; ?></td>
             <td><?= $row['stok']; ?></td>
             <td>
-                <a href="edit.php?id=<?= $row['id']; ?>">Edit</a>
-                <a href="proses_hapus.php?id=<?= $row['id']; ?>">Hapus</a>
+                <a href="./app/views/tabah.php?= $row['id']; ?>">Edit</a>
+                <a href="./app/controllers/proses_hapus.php?id=<?= $row['id']; ?>">Hapus</a>
             </td>
         </tr>
         <?php endwhile; ?>

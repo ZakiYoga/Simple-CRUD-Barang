@@ -3,12 +3,12 @@
 
 <head>
     <title>Tambah Barang</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../../public/css/style.css">
 </head>
 
 <body>
     <h1>Tambah Barang</h1>
-    <form action="proses_tambah.php" method="POST">
+    <form action="../controllers/proses_tambah.php" method="POST">
         <label>Nama Barang</label>
         <input type="text" name="nama_barang" required>
 
