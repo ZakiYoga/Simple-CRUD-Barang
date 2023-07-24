@@ -30,7 +30,7 @@ $result = mysqli_query($conn, $sql);
             <td><?= $row['harga']; ?></td>
             <td><?= $row['stok']; ?></td>
             <td>
-                <a href="./app/views/tabah.php?= $row['id']; ?>">Edit</a>
+                <a href="./app/views/tambah.php?id=<?= $row['id']; ?>">Edit</a>
                 <a href="./app/controllers/proses_hapus.php?id=<?= $row['id']; ?>">Hapus</a>
             </td>
         </tr>
